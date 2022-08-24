@@ -128,8 +128,8 @@ footer .search-policy form input{
 
 input + .search-icon{
    position: relative;
-   right: -80px;
-   top: -35px;
+   right: 40px;
+   top: 5px;
    color: #000;
 }
 
