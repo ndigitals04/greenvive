@@ -123,6 +123,7 @@ footer .search-policy form input{
    background-color: #fff;
    padding: 10px;
    border-radius: 5px;
+   width: 200px;
 }
 
 input + .search-icon{
