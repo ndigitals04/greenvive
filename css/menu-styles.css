@@ -34,7 +34,7 @@ header{
 
 nav ul.menu{
     width: 150px;
-    height: 270px;
+    height: 300px;
     position: absolute;
     top: 60px;
     right: 50px;
@@ -45,6 +45,7 @@ nav ul.menu{
     transform: scale(0);
     opacity: 0;
     border: 0;
+    transition: 0.3s all;
 }
 
 nav ul.menu li{
@@ -91,7 +92,7 @@ header img{
 /*Footer styles */
 footer{
     width: 100%;
-    height: 420px;
+    height: 440px;
     position: relative;
     bottom: 0;
     background-color: rgb(10, 124, 71);
@@ -126,8 +127,8 @@ footer .search-policy form input{
 
 input + .search-icon{
    position: relative;
-   right: 40px;
-   top: 5px;
+   right: -80px;
+   top: -35px;
    color: #000;
 }
 
@@ -158,6 +159,7 @@ footer .newsletter-about form input.submit{
    left: -10px;
    background-color: #131417;
    color: #fff;
+   width: 95px;
 }
 
 footer .newsletter-about form input.submit:hover{
@@ -168,6 +170,7 @@ footer .newsletter-about form input.submit:hover{
 footer .newsletter-about form input.email{
    border-top-right-radius: 0;
    border-bottom-right-radius: 0;
+   width: 180px;
 }
 
 footer .newsletter-about p{
