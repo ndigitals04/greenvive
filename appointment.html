@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/greenvive logo.gif">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+    <div class="announce">
+        <a id="shop" href="shop.html">Get your medications delivered to your doorstep</a>
+    </div>
+    <header>
+        <img class="header-img" src="images-main/greenvive logo.gif" alt="Greenvive logo" />
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+            
+            <div class="nav">
+                <a id="cart" href="cart">Your cart</a>
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+            </div>
+           
+        </nav>
+       
+    </header>
+    <div class="body">
+        <h1 class="appointment">Make an appointment with the Pharmacist</h1>
+        <div class="appointment-form">
+            <form class="appointment">
+                <div class="align-form">
+                    <label class="title" for="name">Name:</label>
+                    <input class="appointment" type="text" name="name" id="name" />
+                    <br>
+                </div>
+                <div class="align-form">
+                    <label class="title" for="number">Phone No:</label>
+                    <input class="appointment" id="number" type="number" name="number"/> <br>
+                </div>           
+                
+                <div class="align-form">
+                    <span class="title">Gender:</span>
+                    <input type="radio" name="gender" value="male" id="male" />
+                    <label class="radio-title" for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                    <label class="radio-title" for="female">Female</label><br>
+                </div>
+                <div class="align-form">
+                    <span class="title">Mode of meeting:</span>
+                    <input type="radio" name="mode_of_meeting" value="online" id="online"/>
+                    <label class="radio-title" for="online">Online</label>
+                    <input type="radio" name="mode_of_meeting" value="physical" id="physical"/>
+                    <label class="radio-title" for="physical">Physical</label>
+                </div>
+                
+                <fieldset class="appointment">
+                    <legend>Date</legend>
+                    <div class="align-form">
+                        <label class="title" for="date">Day:</label>
+                        <input type="date" name="appointment_date" id="date" /><br>
+                    </div>
+                    <div class="align-form">
+                        <label class="title" for="time">Time:</label>
+                        <Select id="time" name="time_for_appointment" >
+                            <option value="9am">9AM</option>
+                            <option value="12am">12AM</option>
+                            <option value="7pm">7PM</option>
+                        </Select>
+                    </div>
+                                
+                </fieldset>
+    
+                <input class="appointment submit-form" type="submit" value="Submit" />
+    
+    
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="newsletter-about">
+                
+                    <form>
+                        <input class="email" type="email" placeholder="Your email" name="email" />
+                        <input class="submit" type="submit" name="subscribe" value="Subscribe" />
+                    </form>
+                    <p>Get free access to our  health newsletter</p>
+                </div>
+                
+                <div class="search-policy">
+                    <form>
+                        <input type="search" placeholder="Search"  />
+                        <i class="ri-search-line search-icon"></i>
+                    </form>
+        
+                    <a href="policy.html/#">Terms & Conditions</a>
+                    <a href="policy.html/#">Privacy Policy</a>
+                    <a href="about.html">About us</a>
+                    
+                </div>
+                
+    
+                
+                
+                
+                <div class="contact-container">
+                    <p class="copyright">&copyGreenvive2022</p>
+                    <a href="telgram-link">
+                        <div class="contact telegram"></div>
+                    </a>
+                    
+                    <a href="twitter-link">
+                        <div class="contact twitter"></div>
+                    </a>
+    
+                    <a href="instagram-link">
+                        <div class="contact instagram"></div>
+                    </a>
+    
+                    <a href="facebook-link">
+                        <div class="contact facebook"></div>
+                    </a>
+    
+                    <a href="whatsapp-link">
+                        <div class="contact whatsapp"></div>
+                    </a>
+    
+                    <a href="mailto:greenviveng@yahoo.com">
+                        <div class="contact mail"></div>
+                    </a>
+                </div>
+                    
+            </div>
+            
+        </footer>
+        
+    </div>
+      
+   
+
+  <!-- Swiper.js -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <!-- Custom script -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
