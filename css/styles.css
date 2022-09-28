@@ -7,6 +7,14 @@ body{
     background-color: white;
     height: 100%;
 }
+
+
+div.body{
+    margin-top: 130px;
+    min-height: 100%;
+    padding-bottom: 430px;
+    position: relative;
+}
 header, nav, section, article, aside, footer{
     display: block;
 }
@@ -43,13 +51,15 @@ header{
     z-index: 1000;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 nav ul.menu{
     width: 150px;
     height: 300px;
-    position: absolute;
-    top: 60px;
-    right: 50px;
     background-color: rgb(10, 124, 71);
     padding: 20px 20px;
     color: #fff;
@@ -76,43 +86,45 @@ nav ul.menu li:active{
     background-color: #fff;
     }
 
-nav .nav{
-    position: absolute;
-    top: 30px;
-    right: 50px;
+div.nav{
     color: #fff;
     display: flex;
 }
 
-.nav .btn{
-    margin-left: 5px;
-}
-nav a#cart{
-    font-size: 20px;
-    margin-right: 5px;
+.nav {
+    gap: 10px;
 }
 
-div.body{
-    margin-top: 130px;
-    min-height: 100%;
-    padding-bottom: 430px;
-    position: relative;
+
+button.btn{
+    display: flex;
+    align-items: center;
 }
+
 header img{
     width: 60px;
     height: 60px;
-    position: absolute;
     border-radius: 80px;
 }
 
 
 /*Slideshow*/
 
+div.slideshow h1.welcome{
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+    z-index: 999;
+    background-color: rgba(0,0,0,.5);
+}
 div.slide-container{
     width: 100%;
     height: 600px;
     overflow: hidden;
     margin-top: 0;
+    position: relative;
 }
 
 div.slideshow{
@@ -203,9 +215,9 @@ div.opening h1,div.location h1, h1.mission, h1.store-services, p.shop{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
     width: 80%;
-    font-size: 150%;
+    font-size: 130%;
 }
 
 div.location h1, p.shop, h1.blog{
@@ -217,6 +229,10 @@ div.location h1, p.shop, h1.blog{
     text-align: center;
 }
 
+h1.mission{
+    width: 80%;
+    padding: 20px 40px;
+}
 address{
     width: 100%;
     height: 80%;
@@ -345,6 +361,7 @@ h1.blog{
     gap: 10px;
     margin: 30px auto;
     text-align: center;
+    align-items: center;
 
  }
 
@@ -361,6 +378,16 @@ h1.blog{
     width: 200px;
  }
 
+ div.search-policy form{
+    width: 200px;
+ }
+
+ div.gsc-control-cse{
+    border: 0;
+    background-color: transparent
+ }
+
+
 footer .search-policy form input:focus + .search-icon{
     display: none;
 }
@@ -368,7 +395,7 @@ footer .search-policy form input:focus + .search-icon{
     position: relative;
     right: 40px;
     top: 5px;
-    color: #000;
+    color: gray;
  }
 
  footer .search-policy a{
@@ -772,7 +799,11 @@ input.appointment{
         width: 300px;
     }
 
-    footer .search-policy form input{
+    div.search-policy{
+        width: 390px;
+        padding: 0;
+    }
+    footer .search-policy form input, div.search-policy form{
         width: 300px;
     }
 
@@ -790,6 +821,56 @@ input.appointment{
     }
  }
  @media screen and  (min-width:768px) {
+    nav{
+        justify-content: center;
+        height: inherit;
+        align-items: center;
+    }
+    nav ul.menu{
+        width: 700px;
+        height: 50px;
+        transform: scale(1);
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0px;
+        border: 0;
+    }
+
+    button.screen-lg-hidden{
+        display: none;
+    }
+
+    nav ul.menu li a{
+        font-size: 100%;
+        font-weight: 500;
+    }
+
+    nav ul.menu li a{
+        margin-right: 20px;
+    }
+
+    nav ul.menu li a:hover{
+        background-color: #fff;
+        color: rgb(10, 124, 71);
+        padding: 5px;
+    }
+
+    nav ul.menu li:active{
+        background-color: rgb(10, 124, 71);;
+    }
+
+    nav ul.menu li a:active{
+        color: #fff;
+    }
+
+    nav{
+        width: 100%;
+    }
+    
     footer{
         height: 300px; 
     }
@@ -866,43 +947,6 @@ input.appointment{
  }
 
  @media screen and (min-width:1024px){
-    nav ul.menu{
-        width: 700px;
-        height: 50px;
-        transform: scale(1);
-        opacity: 1;
-        display: flex;
-        margin: 0 auto;
-        position: relative;
-        top: 0px;
-        border: 0;
-    }
-
-    nav ul.menu li a{
-        font-size: 100%;
-        font-weight: 500;
-    }
-
-    nav ul.menu li a{
-        margin-right: 20px;
-    }
-
-    nav ul.menu li a:hover{
-        border-bottom: 2px solid #fff;
-        padding: 5px;
-    }
-
-    nav ul.menu li:active{
-        background-color: rgb(10, 124, 71);;
-    }
-
-    nav ul.menu li a:active{
-        color: #fff;
-    }
-
-    nav{
-        width: 100%;
-    }
 
     section.company-info{
     display: flex;

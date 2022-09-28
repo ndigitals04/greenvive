@@ -31,13 +31,15 @@ header{
     z-index: 1000;
 }
 
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 nav ul.menu{
     width: 150px;
     height: 300px;
-    position: absolute;
-    top: 60px;
-    right: 50px;
     background-color: rgb(10, 124, 71);
     padding: 20px 20px;
     color: #fff;
@@ -64,30 +66,23 @@ nav ul.menu li:active{
     background-color: #fff;
     }
 
-nav .nav{
-    position: absolute;
-    top: 30px;
-    right: 50px;
+.nav{
     color: #fff;
     display: flex;
+    gap: 10px;
 }
 
-.nav .btn{
-    margin-left: 5px;
-}
-nav a#cart{
-    font-size: 20px;
-    margin-right: 5px;
+button.btn{
+    display: flex;
+    align-items: center;
 }
 
 
 header img{
     width: 60px;
     height: 60px;
-    position: absolute;
     border-radius: 80px;
 }
-
 
 /*Footer styles */
 footer{
@@ -240,3 +235,9 @@ div.contact-container p{
 footer .search-policy form input:focus + .search-icon{
     display: none;
 }
+
+
+div.gsc-control-cse{
+    border: 0;
+    background-color: transparent
+ }
